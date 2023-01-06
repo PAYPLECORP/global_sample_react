@@ -35,11 +35,6 @@ function OrderConfirm() {
         obj.currency = orderParams.currency;                        // [필수] 통화
         obj.firstName = orderParams.firstName;                      // [선택] 카드소유주 이름
         obj.lastName = orderParams.lastName;                        // [선택] 카드소유주 성
-        obj.country = orderParams.country;                          // [선택] 국가
-        obj.administrativeArea = orderParams.administrativeArea;    // [선택] 국가가 미국(US), 혹은 캐나다(CA)인 경우에만 필요한 값으로, 이외 국가의 경우에는 필요하지 않은 값입니다.
-        obj.locality = orderParams.locality;                        // [선택] 시/구/군
-        obj.address1 = orderParams.address1;                        // [선택] 도로명
-        obj.postalCode = orderParams.postalCode;                    // [선택] 우편번호
         obj.email = orderParams.email;                              // [선택] 이메일 주소
         obj.phoneNumber = orderParams.phoneNumber;                  // [선택] 휴대전화 번호
         obj.resultUrl = "http://localhost:3001/api/result";         // [필수] 결제결과 반환(Return) URL

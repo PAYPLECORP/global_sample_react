@@ -27,11 +27,6 @@ function OrderBillingKey() {
                     currency: orderParams.currency,                     // [필수] 통화
                     firstName: orderParams.firstName,                   // [선택] 카드소유주 이름 (보내지 않을 경우, 최초 결제시 입력한 카드소유주 이름으로 결제요청이 됩니다.)
                     lastName: orderParams.lastName,                     // [선택] 카드소유주 성 (보내지 않을 경우, 최초 결제시 입력한 카드소유주 성으로 결제요청이 됩니다.)
-                    country: orderParams.country,                       // [선택] 국가 (보내지 않을 경우, 최초 결제시 입력한 국가로 결제요청이 됩니다.)
-                    administrativeArea: orderParams.administrativeArea, // [선택] 도/시 (보내지 않을 경우, 최초 결제시 입력한 도/시로 결제요청이 됩니다.)
-                    locality: orderParams.locality,                     // [선택] 시/구/군 (보내지 않을 경우, 최초 결제시 입력한 시/구/군으로 결제요청이 됩니다.)
-                    address1: orderParams.address1,                     // [선택] 도로명  (보내지 않을 경우, 최초 결제시 입력한 도로명으로 결제요청이 됩니다.)
-                    postalCode: orderParams.postalCode,                 // [선택] 우편번호  (보내지 않을 경우, 최초 결제시 입력한 우편번호로 결제요청이 됩니다.)
                     email: orderParams.email,                           // [선택] 이메일 주소  (보내지 않을 경우, 최초 결제시 입력한 이메일 주소로 결제요청이 됩니다.)
                     phoneNumber: orderParams.phoneNumber,               // [선택] 휴대전화 번호  (보내지 않을 경우, 최초 결제시 입력한 휴대전화 번호로 결제요청이 됩니다.)
                     resultUrl: orderParams.resultUrl                    // [선택] 해당 파라미터(resultUrl)는 별도의 기능은 하지 않으나, 파트너사에서 빌링키 결제 성공시 리다이렉트 하는 등 활용할 수 있는 파라미터입니다.

@@ -125,26 +125,6 @@ function Result() {
                                 <td>{orderParams.lastName}</td>
                             </tr>
                             <tr>
-                                <td>address1</td>
-                                <td>{orderParams.address1}</td>
-                            </tr>
-                            <tr>
-                                <td>locality</td>
-                                <td>{orderParams.locality}</td>
-                            </tr>
-                            <tr>
-                                <td>administrativeArea</td>
-                                <td>{orderParams.administrativeArea}</td>
-                            </tr>
-                            <tr>
-                                <td>postalCode</td>
-                                <td>{orderParams.postalCode}</td>
-                            </tr>
-                            <tr>
-                                <td>country</td>
-                                <td>{orderParams.country}</td>
-                            </tr>
-                            <tr>
                                 <td>email</td>
                                 <td>{orderParams.email}</td>
                             </tr>

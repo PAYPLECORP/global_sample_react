@@ -17,11 +17,6 @@ function Order() {
             firstName: 'Payple',
             phoneNumber: '01012345678',
             email: 'test@payple.kr',
-            country: 'KR',
-            address1: '14, Teheran-ro 34-gil, Gangnam-gu',
-            locality: 'Seoul',
-            administrativeArea: '',
-            postalCode: '06220'
         }
     )
 
@@ -156,7 +151,7 @@ function Order() {
                             <div className="ctn__form_box">
                                 <div className="input">
                                     <input className="ipt" type="text" id="currency" name="currency"
-                                           defaultValue={orderParams['currency']} onChange={handleFormChange}
+                                           defaultValue={orderParams['currency']} onChange={handleFormChange} readOnly={true}
                                     />
                                 </div>
                             </div>
@@ -198,71 +193,6 @@ function Order() {
                                 <div className="input">
                                     <input className="ipt" type="text" name="email"
                                            defaultValue={orderParams['email']} onChange={handleFormChange}/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/*청구지 관련 파라미터*/}
-                    <div className="tit--by-page">
-                        <h3 className="tit_component">청구지 설정</h3>
-                        <div className="icon">
-                            <img src="/images/icon--arrow-up.svg" alt="" className="res"/>
-                        </div>
-                    </div>
-                    <div className="ctn--by-page">
-                        <div className="form_box has_border w240 form-box-index">
-                            <div className="tit__form_box">항목</div>
-                            <div className="tit__form_box">요청변수</div>
-                            <div className="ctn__form_box fsz_10">값</div>
-                        </div>
-                        <div className="form_box has_border w240">
-                            <div className="tit__form_box fcl_txt fw_bd">국가</div>
-                            <div className="tit__form_box fsz_08">country</div>
-                            <div className="ctn__form_box">
-                                <div className="input">
-                                    <input className="ipt" type="text" name="country"
-                                           defaultValue={orderParams['country']} onChange={handleFormChange}/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="form_box has_border w240">
-                            <div className="tit__form_box fcl_txt fw_bd">도로명</div>
-                            <div className="tit__form_box fsz_08">address1</div>
-                            <div className="ctn__form_box">
-                                <div className="input">
-                                    <input className="ipt" type="text" name="address1"
-                                           defaultValue={orderParams['address1']} onChange={handleFormChange}/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="form_box has_border w240">
-                            <div className="tit__form_box fcl_txt fw_bd">시/군/구</div>
-                            <div className="tit__form_box fsz_08">locality</div>
-                            <div className="ctn__form_box">
-                                <div className="input">
-                                    <input className="ipt" type="text" name="locality"
-                                           defaultValue={orderParams['locality']} onChange={handleFormChange}/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="form_box has_border w240">
-                            <div className="tit__form_box fcl_txt fw_bd">도/시</div>
-                            <div className="tit__form_box fsz_08">administrativeArea</div>
-                            <div className="ctn__form_box">
-                                <div className="input">
-                                    <input className="ipt" type="text" name="administrativeArea"
-                                           defaultValue={orderParams['administrativeArea']}
-                                           placeholder="미국, 캐나다 도시코드 : 예) NY" onChange={handleFormChange}/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="form_box has_border w240">
-                            <div className="tit__form_box fcl_txt fw_bd">우편번호</div>
-                            <div className="tit__form_box fsz_08">postalCode</div>
-                            <div className="ctn__form_box">
-                                <div className="input">
-                                    <input className="ipt" type="text" name="postalCode"
-                                           defaultValue={orderParams['postalCode']} onChange={handleFormChange}/>
                                 </div>
                             </div>
                         </div>

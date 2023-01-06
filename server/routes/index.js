@@ -54,11 +54,6 @@ router.post('/result', (req, res) => {
         currency: req.body.currency,                      // 통화
         firstName: req.body.firstName,                    // 카드소유주 이름
         lastName: req.body.lastName,                      // 카드소유주 성
-        address1: req.body.address1,                      // 도로명
-        locality: req.body.locality,                      // 시/구/군
-        administrativeArea: req.body.administrativeArea,  // 국가
-        postalCode: req.body.postalCode,                  // 도/시 (국가가 미국(US), 혹은 캐나다(CA)인 경우에는 선택한 도/시 코드가 반환됩니다.)
-        country: req.body.country,                        // 우편번호
         email: req.body.email,                            // 이메일 주소
         phoneNumber: req.body.phoneNumber,                // 휴대전화 번호
         billing_key: req.body.billing_key,                // 빌링키 (카드정보를 암호화 한 키 값)
@@ -86,11 +81,6 @@ router.post('/payBillkey', async (req, res) => {
             currency: req.body.currency,                            // [필수] 통화
             firstName: req.body.firstName,                          // [선택] 카드소유주 이름 (보내지 않을 경우, 최초 결제시 입력한 카드소유주 이름으로 결제요청이 됩니다.)
             lastName: req.body.lastName,                            // [선택] 카드소유주 성 (보내지 않을 경우, 최초 결제시 입력한 카드소유주 성으로 결제요청이 됩니다.)
-            country: req.body.country,                              // [선택] 국가 (보내지 않을 경우, 최초 결제시 입력한 국가로 결제요청이 됩니다.)
-            administrativeArea: req.body.administrativeArea,        // [선택] 도/시 (보내지 않을 경우, 최초 결제시 입력한 도/시로 결제요청이 됩니다.)
-            locality: req.body.locality,                            // [선택] 시/구/군 (보내지 않을 경우, 최초 결제시 입력한 시/구/군으로 결제요청이 됩니다.)
-            address1: req.body.address1,                            // [선택] 도로명  (보내지 않을 경우, 최초 결제시 입력한 도로명으로 결제요청이 됩니다.)
-            postalCode: req.body.postalCode,                        // [선택] 우편번호  (보내지 않을 경우, 최초 결제시 입력한 우편번호로 결제요청이 됩니다.)
             email: req.body.email,                                  // [선택] 이메일 주소  (보내지 않을 경우, 최초 결제시 입력한 이메일 주소로 결제요청이 됩니다.)
             phoneNumber: req.body.phoneNumber,                      // [선택] 휴대전화 번호  (보내지 않을 경우, 최초 결제시 입력한 휴대전화 번호로 결제요청이 됩니다.)
             resultUrl: req.body.resultUrl                           // [선택] 해당 파라미터(resultUrl)는 별도의 기능은 하지 않으나, 파트너사에서 빌링키 결제 성공시 리다이렉트 하는 등 활용할 수 있는 파라미터입니다.
