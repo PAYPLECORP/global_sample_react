@@ -129,10 +129,6 @@ function Result() {
                                 <td>{orderParams.email}</td>
                             </tr>
                             <tr>
-                                <td>phoneNumber</td>
-                                <td>{orderParams.phoneNumber}</td>
-                            </tr>
-                            <tr>
                                 <td>billing_key</td>
                                 <td>{orderParams.billing_key}</td>
                             </tr>

@@ -15,7 +15,6 @@ function Order() {
             currency: 'USD',
             lastName: 'Inc',
             firstName: 'Payple',
-            phoneNumber: '01012345678',
             email: 'test@payple.kr',
         }
     )
@@ -173,16 +172,6 @@ function Order() {
                                 <div className="input">
                                     <input className="ipt" type="text" name="firstName"
                                            defaultValue={orderParams['firstName']} onChange={handleFormChange}/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="form_box has_border w240">
-                            <div className="tit__form_box fcl_txt fw_bd">결제고객<br/>휴대전화번호</div>
-                            <div className="tit__form_box fsz_08">phoneNumber</div>
-                            <div className="ctn__form_box">
-                                <div className="input">
-                                    <input className="ipt" type="text" name="phoneNumber"
-                                           defaultValue={orderParams['phoneNumber']} onChange={handleFormChange}/>
                                 </div>
                             </div>
                         </div>

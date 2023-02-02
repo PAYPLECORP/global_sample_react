@@ -36,7 +36,6 @@ function OrderConfirm() {
         obj.firstName = orderParams.firstName;                      // [선택] 카드소유주 이름
         obj.lastName = orderParams.lastName;                        // [선택] 카드소유주 성
         obj.email = orderParams.email;                              // [선택] 이메일 주소
-        obj.phoneNumber = orderParams.phoneNumber;                  // [선택] 휴대전화 번호
         obj.resultUrl = "http://localhost:3001/api/result";         // [필수] 결제결과 반환(Return) URL
         obj.isDirect = orderParams.isDirect;                        // [선택] 결제창 호출 다이렉트 여부 ("" | "Y")
 
@@ -85,10 +84,6 @@ function OrderConfirm() {
                         <tr>
                             <td>결제고객 이름</td>
                             <td>{orderParams.lastName} {orderParams.firstName}</td>
-                        </tr>
-                        <tr>
-                            <td>결제고객 휴대전화번호</td>
-                            <td>{orderParams.phoneNumber}</td>
                         </tr>
                         <tr>
                             <td>결제고객 이메일</td>
